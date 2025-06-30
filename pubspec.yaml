@@ -13,16 +13,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  audioplayers: ^5.2.1 # Adicione esta linha
-
-
+  audioplayers: ^5.2.1 # Mantenha sua versão, ou atualize para ^6.0.0 se quiser
   cupertino_icons: ^1.0.8
+  
+  # --- NOVAS DEPENDÊNCIAS NECESSÁRIAS ---
+  http: ^1.2.1 # Para fazer requisições HTTP ao FlightFeeder
+  flutter_map: ^6.0.0 # Para exibir o mapa
+  latlong2: ^0.9.0 # Para cálculos de distância geográfica (para TCAS e outras lógicas)
+  # -------------------------------------
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-
   flutter_lints: ^5.0.0
 
 flutter:
@@ -31,4 +33,4 @@ flutter:
   assets:
     - assets/sounds/climb.mp3
     - assets/sounds/descend.mp3
-    - assets/sounds/descend.mp3
+    - assets/sounds/tcas_alert.mp3 # Este já está correto
